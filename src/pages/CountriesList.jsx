@@ -38,7 +38,8 @@ const CountriesList = () => {
             />
         </div>
         <div>
-            <select name="regions" id="regions" 
+            <select name="regions" id="regions"
+            aria-label='Filter by Region' 
             placeholder='Filter by region'
             className='py-4 px-9 text-darkgray dark:text-white border-none shadow-lg rounded w-full md:w-[20vw] lg:w-[15vw] mx-auto focus:outline-none dark:bg-darkblue'
             onChange={(e)=>searchRegion(e)}
