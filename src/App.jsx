@@ -6,7 +6,7 @@ import { useTheme } from './context/ThemeContext'
 const App = () => {
   const darkTheme = useTheme();
   return (
-    <div className={`${darkTheme && 'dark'} w-full h-full `}>
+    <div className={`${darkTheme && 'dark'}  h-full min-h-full `}>
       <div className='w-full h-full bg-white dark:bg-verydarkblue'>
     <Navbar/>
     <Routes>

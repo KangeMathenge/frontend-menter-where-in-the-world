@@ -14,9 +14,9 @@ const CountryDetails = () => {
     }
     fetchCountry()
   }, [country])
- if(loading) return <h1>Loading...</h1>
+ if(loading) return <div className='p-3 w-full min-h-full md:h-screen'><h1 className='dark:text-white text-xl'>Loading...</h1></div>
   return (
-    <div className='p-3 w-full h-full md:h-screen'>
+    <div className='p-3 w-full min-h-screen md:h-screen'>
       <Link to='/'><button className='text-black dark:text-white flex items-center py-2 px-6 shadow-md dark:bg-darkblue'><BsArrowLeft className='mr-2'/> Back</button></Link>
       {countryDetails ? 
       (<div className='bg-white mt-6 dark:bg-verydarkblue shadow-lg rounded grid grid-cols-1 md:grid-cols-2'>
